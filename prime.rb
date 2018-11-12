@@ -1,8 +1,12 @@
 # Add  code here!
 
 def prime?(number)
-  if number % 2 == 0 
+  (2..number).each do |divide_by|
+  if number % divide_by == 0 
     return true 
   else 
     return false 
+  end
 end
+
+
