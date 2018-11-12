@@ -3,8 +3,9 @@
 def prime?(integer) 
   (2..integer).each do |divide_by|
     if integer % divide_by == 0 
-      return true 
+      return true
+    else 
+      return false 
     end
   end
-  return false 
 end 
